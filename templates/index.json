@@ -32,8 +32,9 @@
     "fs_hero_NUdmhe": {
       "type": "fs-hero",
       "settings": {
+        "hero_image": "shopify:\/\/shop_images\/fakestore_hero_image.jpg",
         "subtitle": "IN STORES & ONLINE",
-        "title": "<h1>50% OFF EVERYTHING<\/h1>",
+        "title": "<h1>50% OFF<br\/>EVERYTHING<\/h1>",
         "button_1_text": "WOMEN",
         "button_1_url": "https:\/\/www.google.com",
         "button_2_text": "MEN",
