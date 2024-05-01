@@ -1,0 +1,176 @@
+<div class="collection-container">
+  <div class="collection-content-container">
+    <div class="background-image">
+      <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="{{ section.settings.image_1.alt | escape }}">
+    </div>
+    <div class="content">
+      <h2>{{ section.settings.title_1 }}</h2>
+      <p>{{ section.settings.subtitle_1 }}</p>
+      <div class="buttons">
+        {% if section.settings.button_1_text_1 != blank and section.settings.button_1_url_1 != blank %}
+          <a href="{{ section.settings.button_1_url_1 }}" class="btn">{{ section.settings.button_1_text_1 }}</a>
+        {% endif %}
+        {% if section.settings.button_1_text_2 != blank and section.settings.button_1_url_2 != blank %}
+          <a href="{{ section.settings.button_1_url_2 }}" class="btn">{{ section.settings.button_1_text_2 }}</a>
+        {% endif %}
+        {% if section.settings.button_1_text_3 != blank and section.settings.button_1_url_3 != blank %}
+          <a href="{{ section.settings.button_1_url_3 }}" class="btn">{{ section.settings.button_1_text_3 }}</a>
+        {% endif %}
+        {% if section.settings.button_1_text_4 != blank and section.settings.button_1_url_4 != blank %}
+          <a href="{{ section.settings.button_1_url_4 }}" class="btn">{{ section.settings.button_1_text_4 }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="collection-content-container">
+    <div class="background-image">
+      <img src="{{ section.settings.image_2 | img_url: 'master' }}" alt="{{ section.settings.image_2.alt | escape }}">
+    </div>
+    <div class="content">
+      <h2>{{ section.settings.title_2 }}</h2>
+      <p>{{ section.settings.subtitle_2 }}</p>
+      <div class="buttons">
+        {% if section.settings.button_2_text_1 != blank and section.settings.button_2_url_1 != blank %}
+          <a href="{{ section.settings.button_2_url_1 }}" class="btn">{{ section.settings.button_2_text_1 }}</a>
+        {% endif %}
+        {% if section.settings.button_2_text_2 != blank and section.settings.button_2_url_2 != blank %}
+          <a href="{{ section.settings.button_2_url_2 }}" class="btn">{{ section.settings.button_2_text_2 }}</a>
+        {% endif %}
+        {% if section.settings.button_2_text_3 != blank and section.settings.button_2_url_3 != blank %}
+          <a href="{{ section.settings.button_2_url_3 }}" class="btn">{{ section.settings.button_2_text_3 }}</a>
+        {% endif %}
+        {% if section.settings.button_2_text_4 != blank and section.settings.button_2_url_4 != blank %}
+          <a href="{{ section.settings.button_2_url_4 }}" class="btn">{{ section.settings.button_2_text_4 }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Fakestore Collections",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1",
+      "info": "Upload background image for column 1."
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title 1"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_1",
+      "label": "Subtitle 1"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text_1",
+      "label": "Button 1 Text"
+    },
+    {
+      "type": "url",
+      "id": "button_1_url_1",
+      "label": "Button 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text_2",
+      "label": "Button 2 Text"
+    },
+    {
+      "type": "url",
+      "id": "button_1_url_2",
+      "label": "Button 2 URL"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text_3",
+      "label": "Button 3 Text"
+    },
+    {
+      "type": "url",
+      "id": "button_1_url_3",
+      "label": "Button 3 URL"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text_4",
+      "label": "Button 4 Text"
+    },
+    {
+      "type": "url",
+      "id": "button_1_url_4",
+      "label": "Button 4 URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2",
+      "info": "Upload background image for column 2."
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title 2"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_2",
+      "label": "Subtitle 2"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text_1",
+      "label": "Button 1 Text"
+    },
+    {
+      "type": "url",
+      "id": "button_2_url_1",
+      "label": "Button 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text_2",
+      "label": "Button 2 Text"
+    },
+    {
+      "type": "url",
+      "id": "button_2_url_2",
+      "label": "Button 2 URL"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text_3",
+      "label": "Button 3 Text"
+    },
+    {
+      "type": "url",
+      "id": "button_2_url_3",
+      "label": "Button 3 URL"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text_4",
+      "label": "Button 4 Text"
+    },
+    {
+      "type": "url",
+      "id": "button_2_url_4",
+      "label": "Button 4 URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fakestore Collections",
+      "category": "Fakestore"
+    }
+  ]
+}
+{% endschema %}
