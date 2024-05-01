@@ -84,8 +84,35 @@
     },
     "fs_perks_j4Rf3x": {
       "type": "fs-perks",
+      "blocks": {
+        "perk_ewbRQw": {
+          "type": "perk",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/shipping-icon.svg",
+            "text": "FREE SHIPPING ON ALL ORDERS"
+          }
+        },
+        "perk_KQrAe6": {
+          "type": "perk",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/returns-icon.svg",
+            "text": "FREE RETURNS ON ALL ORDERS"
+          }
+        },
+        "perk_yP8ByW": {
+          "type": "perk",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "perk_ewbRQw",
+        "perk_KQrAe6",
+        "perk_yP8ByW"
+      ],
       "settings": {
-        "title": "Fakestore Perks"
+        "title": ""
       }
     }
   },
