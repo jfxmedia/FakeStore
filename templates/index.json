@@ -1,127 +1,127 @@
 {
-    "sections": {
-      "featured_collection": {
-        "type": "featured-collection",
-        "disabled": true,
-        "settings": {
-          "title": "Featured products",
-          "heading_size": "h2",
-          "description": "",
-          "show_description": false,
-          "description_style": "body",
-          "collection": "all",
-          "products_to_show": 8,
-          "columns_desktop": 4,
-          "full_width": false,
-          "show_view_all": true,
-          "view_all_style": "solid",
-          "enable_desktop_slider": false,
-          "color_scheme": "scheme-1",
-          "image_ratio": "adapt",
-          "image_shape": "default",
-          "show_secondary_image": true,
-          "show_vendor": false,
-          "show_rating": false,
-          "quick_add": "none",
-          "columns_mobile": "2",
-          "swipe_on_mobile": false,
-          "padding_top": 44,
-          "padding_bottom": 36
-        }
-      },
-      "fs_hero_NUdmhe": {
-        "type": "fs-hero",
-        "settings": {
-          "hero_image": "shopify:\/\/shop_images\/fakestore_hero_image.jpg",
-          "subtitle": "IN STORES & ONLINE",
-          "title": "<h1>50% OFF<br\/>EVERYTHING<\/h1>",
-          "button_1_text": "WOMEN",
-          "button_1_url": "https:\/\/www.google.com",
-          "button_2_text": "MEN",
-          "button_2_url": "https:\/\/www.google.com",
-          "button_3_text": "KIDS",
-          "button_3_url": "https:\/\/www.google.com",
-          "button_4_text": "HOME",
-          "button_4_url": "https:\/\/www.google.com"
-        }
-      },
-      "fs_image_with_text_GLF3fJ": {
-        "type": "fs-image-with-text",
-        "settings": {
-          "featured_image": "shopify:\/\/shop_images\/image_with_text_image.jpg",
-          "title": "Vacay This Way",
-          "subtitle": "Everything you need for your summer get away!",
-          "button_url": "shopify:\/\/collections",
-          "button_text": "SHOP SUMMER ESSENTIALS"
-        }
-      },
-      "fs_collections_txXx7h": {
-        "type": "fs-collections",
-        "settings": {
-          "image_1": "shopify:\/\/shop_images\/college_bound_kids.jpg",
-          "title_1": "NEW ARRIVALS",
-          "subtitle_1": "Our latest Summer styles. Fresh. Fun. Fabulous.",
-          "button_1_text_1": "WOMEN",
-          "button_1_url_1": "shopify:\/\/collections",
-          "button_1_text_2": "MEN",
-          "button_1_url_2": "shopify:\/\/collections",
-          "button_1_text_3": "KIDS",
-          "button_1_url_3": "shopify:\/\/collections",
-          "button_1_text_4": "HOME",
-          "button_1_url_4": "shopify:\/\/collections",
-          "image_2": "shopify:\/\/shop_images\/college_dorm_room.jpg",
-          "title_2": "COLLEGE BOUND",
-          "subtitle_2": "New places and new faces. Same great style.",
-          "button_2_text_1": "SHOP DORM DECOR",
-          "button_2_url_1": "shopify:\/\/collections",
-          "button_2_text_2": "",
-          "button_2_url_2": "",
-          "button_2_text_3": "",
-          "button_2_url_3": "",
-          "button_2_text_4": "",
-          "button_2_url_4": ""
-        }
-      },
-      "fs_perks_j4Rf3x": {
-        "type": "fs-perks",
-        "blocks": {
-          "perk_ewbRQw": {
-            "type": "perk",
-            "settings": {
-              "icon": "shopify:\/\/shop_images\/shipping-icon.svg",
-              "text": "FREE SHIPPING ON ALL ORDERS"
-            }
-          },
-          "perk_KQrAe6": {
-            "type": "perk",
-            "settings": {
-              "icon": "shopify:\/\/shop_images\/returns-icon.svg",
-              "text": "FREE RETURNS ON ALL ORDERS"
-            }
-          },
-          "perk_yP8ByW": {
-            "type": "perk",
-            "settings": {
-              "icon": "shopify:\/\/shop_images\/checkout-icon.svg",
-              "text": "SAFE & SECURE CHECKOUT"
-            }
-          }
-        },
-        "block_order": [
-          "perk_ewbRQw",
-          "perk_KQrAe6",
-          "perk_yP8ByW"
-        ],
-        "settings": {
-          "title": ""
-        }
+  "sections": {
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
       }
     },
-    "order": [
-      "featured_collection",
-      "fs_hero_NUdmhe",
-      "fs_image_with_text_GLF3fJ",
-      "fs_collections_txXx7h",
-      "fs_perks_j4Rf3x"
-    ]
-  }
+    "fs_hero_NUdmhe": {
+      "type": "fs-hero",
+      "settings": {
+        "hero_image": "shopify:\/\/shop_images\/fakestore_hero_image.jpg",
+        "subtitle": "IN STORES & ONLINE",
+        "title": "<h1>50% OFF<br\/>EVERYTHING<\/h1>",
+        "button_1_text": "WOMEN",
+        "button_1_url": "https:\/\/www.google.com",
+        "button_2_text": "MEN",
+        "button_2_url": "https:\/\/www.google.com",
+        "button_3_text": "KIDS",
+        "button_3_url": "https:\/\/www.google.com",
+        "button_4_text": "HOME",
+        "button_4_url": "https:\/\/www.google.com"
+      }
+    },
+    "fs_image_with_text_GLF3fJ": {
+      "type": "fs-image-with-text",
+      "settings": {
+        "featured_image": "shopify:\/\/shop_images\/image_with_text_image.jpg",
+        "title": "Vacay This Way",
+        "subtitle": "Everything you need for your summer get away!",
+        "button_url": "shopify:\/\/collections",
+        "button_text": "SHOP SUMMER ESSENTIALS"
+      }
+    },
+    "fs_collections_txXx7h": {
+      "type": "fs-collections",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/college_bound_kids.jpg",
+        "title_1": "NEW ARRIVALS",
+        "subtitle_1": "Our latest Summer styles. Fresh. Fun. Fabulous.",
+        "button_1_text_1": "WOMEN",
+        "button_1_url_1": "shopify:\/\/collections",
+        "button_1_text_2": "MEN",
+        "button_1_url_2": "shopify:\/\/collections",
+        "button_1_text_3": "KIDS",
+        "button_1_url_3": "shopify:\/\/collections",
+        "button_1_text_4": "HOME",
+        "button_1_url_4": "shopify:\/\/collections",
+        "image_2": "shopify:\/\/shop_images\/college_dorm_room.jpg",
+        "title_2": "COLLEGE BOUND",
+        "subtitle_2": "New places and new faces. Same great style.",
+        "button_2_text_1": "SHOP DORM DECOR",
+        "button_2_url_1": "shopify:\/\/collections",
+        "button_2_text_2": "",
+        "button_2_url_2": "",
+        "button_2_text_3": "",
+        "button_2_url_3": "",
+        "button_2_text_4": "",
+        "button_2_url_4": ""
+      }
+    },
+    "fs_perks_j4Rf3x": {
+      "type": "fs-perks",
+      "blocks": {
+        "perk_ewbRQw": {
+          "type": "perk",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/shipping-icon.svg",
+            "text": "FREE SHIPPING ON ALL ORDERS"
+          }
+        },
+        "perk_KQrAe6": {
+          "type": "perk",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/returns-icon.svg",
+            "text": "FREE RETURNS ON ALL ORDERS"
+          }
+        },
+        "perk_yP8ByW": {
+          "type": "perk",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/checkout-icon.svg",
+            "text": "SAFE & SECURE CHECKOUT"
+          }
+        }
+      },
+      "block_order": [
+        "perk_ewbRQw",
+        "perk_KQrAe6",
+        "perk_yP8ByW"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "featured_collection",
+    "fs_hero_NUdmhe",
+    "fs_image_with_text_GLF3fJ",
+    "fs_collections_txXx7h",
+    "fs_perks_j4Rf3x"
+  ]
+}
