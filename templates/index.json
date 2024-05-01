@@ -102,7 +102,8 @@
         "perk_yP8ByW": {
           "type": "perk",
           "settings": {
-            "text": ""
+            "icon": "shopify:\/\/shop_images\/checkout-icon.svg",
+            "text": "SAFE & SECURE CHECKOUT"
           }
         }
       },
