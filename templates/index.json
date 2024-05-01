@@ -58,6 +58,7 @@
     "fs_collections_txXx7h": {
       "type": "fs-collections",
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/college_bound_kids.jpg",
         "title_1": "",
         "subtitle_1": "",
         "button_1_text_1": "",
@@ -68,6 +69,7 @@
         "button_1_url_3": "",
         "button_1_text_4": "",
         "button_1_url_4": "",
+        "image_2": "shopify:\/\/shop_images\/college_dorm_room.jpg",
         "title_2": "",
         "subtitle_2": "",
         "button_2_text_1": "",
