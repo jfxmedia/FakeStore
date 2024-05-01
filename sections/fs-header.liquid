@@ -12,7 +12,6 @@
 
 .site-header-logo img {
   display: block;
-  max-width: 200px;
   margin: 30px;
 }
 
@@ -76,11 +75,13 @@
   }
 
   .site-header-logo img {
-    max-width: 100px;
+    max-width: 200px;
     margin: 10px;
   }
 }
 {%- endstyle -%}
+
+{% assign logo = images['fakestore-logo.png'] %}
 
 <header class="site-header">
   <div class="hamburger-menu">&#9776;</div>
@@ -88,7 +89,7 @@
   <div class="header-logo-links">
     <div class="site-header-logo">
       <a href="{{ shop.url }}">
-        <img src="{{ section.settings.logo | asset_url }}" alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+        {{ logo | image_url: width: auto | image_tag }}
       </a>
     </div>
     
@@ -114,11 +115,6 @@
 {
   "name": "Fakestore Header",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Store Logo" 
-    },
     {
       "type": "text",
       "id": "header_link_color",
