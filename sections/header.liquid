@@ -1,8 +1,68 @@
+
+
+<style>
+
+  .site-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+  .site-header-logo img {
+    max-width: 200px;
+    height: auto;
+    margin: 30px;
+  }
+
+  .header-logo-links {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-search-cart {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-right: 20px;
+  }
+
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  .nav-item a {
+    color: #141414;
+    text-decoration: none;
+  }
+  .fakestore-logo {
+    width: 100%;
+    display: inline-block;
+  }
+
+</style>
+
+
 <header class="site-header">
   <div class="header-logo-links">
     <div class="site-header-logo">
       <a href="{{ shop.url }}">
-        <img src=" {{ settings.logo | asset_url }}" class="fakestore-logo" alt="{{ settings.logo.alt | default: shop.name | escape }}">
+        <img src=" {{ settings.logo | image_url: width: 600 }}" class="fakestore-logo" alt="{{ settings.logo.alt | default: shop.name | escape }}">
       </a>
     </div>
       <ul class="nav-list">
