@@ -1,0 +1,116 @@
+<section class="hero-container">
+  <div class="hero-section-image">
+    <img src="{{ section.settings.hero_image | img_url: 'master' }}" alt="{{ section.settings.hero_image.alt | escape }}">
+  </div>
+  <div class="hero-section-content">
+    <div class="hero-section-text">
+      {% if section.settings.subtitle != blank %}
+        <div class="hero-section-subtitle">{{ section.settings.subtitle | raw }}</div>
+      {% endif %}
+      <h1>{{ section.settings.title }}</h1>
+      <div class="hero-section-buttons">
+        {% if section.settings.button_1_text != blank and section.settings.button_1_url != blank %}
+          <a href="{{ section.settings.button_1_url }}" class="btn">{{ section.settings.button_1_text }}</a>
+        {% endif %}
+        {% if section.settings.button_2_text != blank and section.settings.button_2_url != blank %}
+          <a href="{{ section.settings.button_2_url }}" class="btn">{{ section.settings.button_2_text }}</a>
+        {% endif %}
+        {% if section.settings.button_3_text != blank and section.settings.button_3_url != blank %}
+          <a href="{{ section.settings.button_3_url }}" class="btn">{{ section.settings.button_3_text }}</a>
+        {% endif %}
+        {% if section.settings.button_4_text != blank and section.settings.button_4_url != blank %}
+          <a href="{{ section.settings.button_4_url }}" class="btn">{{ section.settings.button_4_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script>
+    var headerHeight = document.querySelector('.site-header').offsetHeight;
+    document.body.style.paddingTop = headerHeight + 'px';
+  </script>
+
+{% schema %}
+{
+  "name": "Fakestore Hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero Section Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image",
+      "info": "Upload the main image for the hero section."
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "<p>IN STORES & ONLINE</p>"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "50% OFF EVERYTHING"
+    },
+    {
+      "type": "text",
+      "id": "button_1_text",
+      "label": "Button 1 Text",
+      "default": "WOMEN"
+    },
+    {
+      "type": "text",
+      "id": "button_1_url",
+      "label": "Button 1 URL",
+      "default": "https://www.google.com"
+    },
+    {
+      "type": "text",
+      "id": "button_2_text",
+      "label": "Button 2 Text",
+      "default": "MEN"
+    },
+    {
+      "type": "text",
+      "id": "button_2_url",
+      "label": "Button 2 URL",
+      "default": "https://www.google.com"
+    },
+    {
+      "type": "text",
+      "id": "button_3_text",
+      "label": "Button 3 Text",
+      "default": "KIDS"
+    },
+    {
+      "type": "text",
+      "id": "button_3_url",
+      "label": "Button 3 URL",
+      "default": "https://www.google.com"
+    },
+    {
+      "type": "text",
+      "id": "button_4_text",
+      "label": "Button 4 Text",
+      "default": "HOME"
+    },
+    {
+      "type": "text",
+      "id": "button_4_url",
+      "label": "Button 4 URL",
+      "default": "https://www.google.com"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fakestore Hero",
+      "category": "Fakestore"
+    }
+  ]
+}
+{% endschema %}

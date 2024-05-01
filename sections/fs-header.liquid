@@ -1,0 +1,43 @@
+<header class="site-header">
+  <div class="header-logo-links">
+    <div class="site-header-logo">
+      <a href="{{ shop.url }}">
+        <img src=" {{ settings.logo | asset_url }}" class="fakestore-logo" alt="{{ settings.logo.alt | default: shop.name | escape }}">
+      </a>
+    </div>
+      <ul class="nav-list">
+        {% for link in linklists.main-menu.links %}
+          <li class="nav-item">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+  </div>
+  <div class="header-cart-search">
+    <div class="search">SEARCH BOX</div>
+    <div class="divider">|</div>
+    <div class="cart">CART</div>
+  </div>
+</header>
+
+
+{% schema %}
+  {
+    "name": "Fakestore Header",
+    "settings": [
+      {
+        "type": "text",
+        "id": "header_link_color",
+        "label": "Header Link Color",
+        "default": "#333333"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Fakestore Header",
+        "category": "Fakestore"
+      }
+    ]
+  }
+  {% endschema %}
+  
