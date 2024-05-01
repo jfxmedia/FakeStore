@@ -1,9 +1,59 @@
+{%- style -%}
+.site-header {
+  position: sticky;
+  background-color: #ffffff;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 15px;
+}
+
+.site-header-logo img{
+  display: block;
+  max-width: 200px;
+  margin: 30px;
+}
+
+.header-logo-links {
+  display: flex;
+  flex-direction: row;
+}
+.header-search-cart {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  color: #141414;
+  text-decoration: none;
+  font-weight: bold;
+}
+{%- endstyle -%}
+
 <header class="site-header">
   <div class="header-logo-links">
     <div class="site-header-logo">
       <a href="{{ shop.url }}">
-        <img src=" {{ settings.logo | asset_url }}" class="fakestore-logo" alt="{{ settings.logo.alt | default: shop.name | escape }}">
-      </a>
+        <img src="{{ section.settings.logo | asset_url }}" alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+        </a>
     </div>
       <ul class="nav-list">
         {% for link in linklists.main-menu.links %}
@@ -13,7 +63,7 @@
         {% endfor %}
       </ul>
   </div>
-  <div class="header-cart-search">
+  <div class="header-search-cart">
     <div class="search">SEARCH BOX</div>
     <div class="divider">|</div>
     <div class="cart">CART</div>
@@ -25,6 +75,11 @@
   {
     "name": "Fakestore Header",
     "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Store Logo" 
+      },
       {
         "type": "text",
         "id": "header_link_color",

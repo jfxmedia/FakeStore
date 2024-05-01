@@ -1,52 +1,100 @@
-<div class="image-with-text-container">
-  <div class="image-with-text-content-container">
-    <div class="text-content">
-      <h2>{{ section.settings.title }}</h2>
-      <p>{{ section.settings.subtitle }}</p>
-      <a href="{{ section.settings.button_url }}" class="button">{{ section.settings.button_text }}</a>
+{%- style -%}
+  .image-with-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+  }
+  
+  .content-container {
+    max-width: 40%;
+    padding: 50px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+  }
+  
+  .background-image {
+    flex: 1;
+  }
+  
+  .background-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .text-content {
+    text-align: left;
+  }
+  
+  .text-content h2 {
+    font-weight: bold;
+    font-size: 4.2rem;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #141414;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  {%- endstyle -%}
+<div class="container">
+  <div class="image-with-text-container">
+    <div class="content-container">
+      <div class="text-content">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.subtitle }}</p>
+        <a href="{{ section.settings.button_url }}" class="button">{{ section.settings.button_text }}</a>
+      </div>
+    </div>
+    <div class="background-image">
+      <img src="{{ section.settings.featured_image | img_url: 'master' }}" alt="{{ section.settings.featured_image.alt | escape }}">
     </div>
   </div>
-  <div class="background-image">
-    <img src="{{ section.settings.featured_image | img_url: 'master' }}" alt="{{ section.settings.featured_image.alt | escape }}">
-  </div>
 </div>
-
-{% schema %}
-{
-  "name": "Fakestore Image with Text",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "featured_image",
-      "label": "Featured Image",
-      "info": "Upload the main image for the hero section."
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title"
-    },
-    {
-      "type": "text",
-      "id": "subtitle",
-      "label": "Subtitle"
-    },
-    {
-      "type": "url",
-      "id": "button_url",
-      "label": "Button URL"
-    },
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Fakestore Image with Text",
-      "category": "Fakestore"
-    }
-  ]
-}
-{% endschema %}
+  
+  {% schema %}
+  {
+    "name": "Fakestore Image with Text",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "featured_image",
+        "label": "Featured Image",
+        "info": "Upload the main image for the hero section."
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Fakestore Image with Text",
+        "category": "Fakestore"
+      }
+    ]
+  }
+  {% endschema %}
+  
