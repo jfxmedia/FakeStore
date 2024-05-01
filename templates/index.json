@@ -48,10 +48,11 @@
     "fs_image_with_text_GLF3fJ": {
       "type": "fs-image-with-text",
       "settings": {
-        "title": "",
-        "subtitle": "",
-        "button_url": "",
-        "button_text": ""
+        "featured_image": "shopify:\/\/shop_images\/image_with_text_image.jpg",
+        "title": "Vacay This Way",
+        "subtitle": "Everything you need for your summer get away!",
+        "button_url": "shopify:\/\/collections",
+        "button_text": "SHOP SUMMER ESSENTIALS"
       }
     },
     "fs_collections_txXx7h": {
