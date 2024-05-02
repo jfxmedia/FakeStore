@@ -2,9 +2,9 @@
   <div class="image-with-text-container">
     <div class="content-container">
       <div class="text-content">
-        <h2>{{ section.settings.title }}</h2>
+        <h2 class="{{ section.settings.color }}">{{ section.settings.title }}</h2>
         <p>{{ section.settings.subtitle }}</p>
-        <a href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+        <a href="{{ section.settings.button_url }}" class="primary-button">{{ section.settings.button_text }}</a>
       </div>
     </div>
     <div class="background-image">
@@ -15,7 +15,7 @@
   
   {% schema %}
   {
-    "name": "Fakestore Image with Text",
+    "name": "FS Image with Text",
     "settings": [
       {
         "type": "image_picker",
@@ -46,7 +46,7 @@
     ],
     "presets": [
       {
-        "name": "Fakestore Image with Text",
+        "name": "FS Image with Text",
         "category": "Fakestore"
       }
     ]

@@ -1,6 +1,9 @@
 <header class="header">
+  {% comment %} Mobile Menu {% endcomment %}
   <div class="hamburger-menu">&#9776;</div>
   
+
+  {% comment %} Desktop Menu {% endcomment %}
   <div class="header-logo-links">
     <div class="header-logo">
       <a href="{{ shop.url }}">
@@ -38,7 +41,7 @@
 
 {% schema %}
   {
-    "name": "Fakestore Header",
+    "name": "FS Header",
     "settings": [
       {
         "type": "image_picker",
@@ -55,7 +58,7 @@
     ],
     "presets": [
       {
-        "name": "Fakestore Header",
+        "name": "FS Header",
         "category": "Fakestore"
       }
     ]

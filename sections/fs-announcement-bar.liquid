@@ -1,0 +1,53 @@
+<style>
+  .white {
+    background-color: var(--color-white);
+  }
+  .blue {
+    background-color: var(--color-blue);
+  }
+</style>
+
+
+<div class="announcement-container {% if section.settings.bar_color == 'blue' %}blue {% else %}white{% endif %}">
+  <div class="text-content">
+    {{ section.settings.announcement_text }}
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "FS Announcement Bar",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "announcement_text",
+      "label": "Announcement Text",
+      "default": "<p>FREE SHIPPING & RETURNS ON EVERY ORDER!</p>"
+    },
+    {
+      "type": "radio",
+      "id": "bar_color",
+      "label": "Announcement Bar BG Color",
+      "options": [
+        {
+          "value": "blue",
+          "label": "Blue BG"
+        },
+        {
+          "value": "white",
+          "label": "White BG"
+        }
+      ],
+      "default": "blue"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "FS Announcement Bar",
+      "category": "Fakestore"
+    }
+  ]
+}
+{% endschema %}

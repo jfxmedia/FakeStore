@@ -10,7 +10,7 @@
         <div class="buttons">
           {% for block in section.blocks %}
             {% if block.settings.button_1_text != blank and block.settings.button_1_url != blank %}
-              <a href="{{ block.settings.button_1_url }}">{{ block.settings.button_1_text }}</a>
+              <a href="{{ block.settings.button_1_url }}" class="{{ section.settings.button_style }}">{{ block.settings.button_1_text }}</a>
             {% endif %}
           {% endfor %}
         </div>
@@ -26,7 +26,7 @@
         <div class="buttons">
           {% for block in section.blocks %}
             {% if block.settings.button_2_text != blank and block.settings.button_2_url != blank %}
-              <a href="{{ block.settings.button_2_url }}">{{ block.settings.button_2_text }}</a>
+              <a href="{{ block.settings.button_2_url }}" class="{{ section.settings.button_style_2 }}">{{ block.settings.button_2_text }}</a>
             {% endif %}
           {% endfor %}
         </div>
@@ -39,7 +39,7 @@
 
 {% schema %}
 {
-  "name": "Fakestore Collections",
+  "name": "FS Collections",
   "settings": [
     {
       "type": "image_picker",
@@ -72,11 +72,43 @@
       "type": "text",
       "id": "subtitle_2",
       "label": "Subtitle 2"
+    },
+    {
+      "type": "radio",
+      "id": "button_style",
+      "label": "Button Style Left",
+      "options": [
+        {
+          "value": "primary-button",
+          "label": "Solid Button"
+        },
+        {
+          "value": "secondary-button",
+          "label": "Hollow Button"
+        }
+      ],
+      "default": "primary-button"
+    },
+    {
+      "type": "radio",
+      "id": "button_style_2",
+      "label": "Button Style Right",
+      "options": [
+        {
+          "value": "primary-button",
+          "label": "Solid Button"
+        },
+        {
+          "value": "secondary-button",
+          "label": "Hollow Button"
+        }
+      ],
+      "default": "primary-button"
     }
   ],
     "blocks": [
       {
-        "name": "Buttons 1",
+        "name": "Button Left Block",
         "type": "buttons_1",
         "limit": 4,
         "settings": [
@@ -95,7 +127,7 @@
         ]
       },
       {
-        "name": "Buttons 2",
+        "name": "Button Right Block",
         "type": "buttons_2",
         "limit": 4,
         "settings": [
@@ -116,7 +148,7 @@
     ],
   "presets": [
     {
-      "name": "Fakestore Collections",
+      "name": "FS Collections",
       "category": "Fakestore"
     }
   ]

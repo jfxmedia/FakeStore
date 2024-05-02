@@ -21,16 +21,58 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
+:root {
+  --color-dark: #141414;
+  --color-white: #ffffff;
+  --color-blue: #005BC4;
+  --color-lightgray: #ececec;
+  --color-gray: #ccc;
+}
+
 .container {
   max-width: 1400px;
   margin: auto;
 }
 
+.primary-button {
+  display: inline-block;
+  padding: 15px 50px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.secondary-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 50px;
+  color: #141414;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Announcement Bar Styles */
+.announcement-container {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  height: auto;
+}
+
+.announcement-container .text-content {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
 
 /* Header Styles */
 .header {
   position: sticky;
-  background-color: #ffffff;
+  background-color: var(--color-white);
+  top: 0;
   z-index: 999;
   width: 100%;
   display: flex;
@@ -107,7 +149,7 @@ time, mark, audio, video {
 .search-input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-gray);
   border-radius: 20px; 
   font-size: 16px;
   box-sizing: border-box; 
@@ -172,14 +214,13 @@ time, mark, audio, video {
 }
 
 .hero-section-text {
-  color: #141414;
+  color: var(--color-dark);
   text-align: center;
 }
 
 .hero-section-subtitle {
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 20px;
 }
 
 .hero-section-text h1 {
@@ -187,15 +228,10 @@ time, mark, audio, video {
   font-weight: bold;
 }
 
-.hero-section-buttons a {
-  display: inline-block;
+.hero-section-buttons > * {
   margin: 10px;
-  padding: 15px 50px;
-  background-color: #141414;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
 }
+
 
 @media only screen and (max-width: 1023px) {
   .hero-section-content {
@@ -207,7 +243,7 @@ time, mark, audio, video {
     padding: 10px;
     box-sizing: border-box;
     z-index: 999;
-    background-color: #ffffff;
+    background-color: var(--color-white);
   }
   .hero-section-text h1 {
     font-size: 4rem;
@@ -226,8 +262,8 @@ time, mark, audio, video {
 .content-container {
   max-width: 100%;
   padding: 50px;
-  background-color: #fff;
-  border: 1px solid #ececec;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray)
 }
 
 .background-image img {
@@ -239,22 +275,17 @@ time, mark, audio, video {
 .text-content {
   text-align: left;
 }
-.text-content a{
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #141414;
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+
 
 .text-content h2 {
   font-weight: bold;
   font-size: 4.2rem;
 }
 @media only screen and (max-width: 1023px) {
+  .text-content {
+    text-align: center;
+    padding: 10px;
+  }
   .image-with-text-container {
     position: relative;
   }
@@ -268,7 +299,7 @@ time, mark, audio, video {
     padding: 10px;
     box-sizing: border-box;
     z-index: 999;
-    background-color: #ffffff;
+    background-color: var(--color-white)
   }
 }
 
@@ -306,7 +337,7 @@ time, mark, audio, video {
   width: 100%;
   padding: 2rem 3rem;
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .collection-content-container .content h2 {
@@ -318,21 +349,11 @@ time, mark, audio, video {
   padding: 10px 0;
 }
 
-.collection-content-container .content .buttons a {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 10px 20px;
-  color: #141414;
-  text-decoration: underline;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
 
 /* Perks Section Styles */
 .perks-container {
   display: flex;
-  background-color: #f7f8f8;
+  background-color: var(--color-lightgray);
   align-items: center;
   flex-direction: column;
   margin: 22px 0;
