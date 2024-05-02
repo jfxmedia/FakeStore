@@ -45,7 +45,7 @@ time, mark, audio, video {
 }
 
 .header-logo img {
-  display: block;
+  display: flex;
   margin: 20px;
   max-width: 200px;
 }
@@ -126,7 +126,7 @@ time, mark, audio, video {
   display: none;
 }
 
-@media (max-width: 799px) {
+@media only screen and (max-width: 799px) {
   .hamburger-menu {
     display: block;
     font-size: 26px;
@@ -163,7 +163,6 @@ time, mark, audio, video {
   left: 30%;
   transform: translate(-50%, -50%);
   display: flex;
-  color: #ffffff;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
@@ -196,6 +195,24 @@ time, mark, audio, video {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 799px) {
+  .hero-section-content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 999;
+    background-color: #ffffff;
+  }
+  .hero-section-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
+
 /* Image with Text Section Styles */
 .image-with-text-container {
   display: flex;
@@ -220,13 +237,7 @@ time, mark, audio, video {
 .text-content {
   text-align: left;
 }
-
-.text-content h2 {
-  font-weight: bold;
-  font-size: 4.2rem;
-}
-
-.button {
+.text-content a{
   display: inline-block;
   padding: 12px 24px;
   background-color: #141414;
@@ -236,6 +247,29 @@ time, mark, audio, video {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
+
+.text-content h2 {
+  font-weight: bold;
+  font-size: 4.2rem;
+}
+@media only screen and (max-width: 799px) {
+  .image-with-text-container {
+    position: relative;
+  }
+  .content-container {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 999;
+    background-color: #ffffff;
+  }
+}
+
 
 /* Collection Section Styles */
 .collection-container {
@@ -329,7 +363,7 @@ time, mark, audio, video {
   text-align: center;
 }
 
-@media (max-width: 799px) {
+@media only screen and (max-width: 799px) {
   .perks {
     display: flex;
     justify-content: space-evenly;
