@@ -31,18 +31,46 @@
     },
     "fs_hero_NUdmhe": {
       "type": "fs-hero",
+      "blocks": {
+        "button_kcf6Ng": {
+          "type": "button",
+          "settings": {
+            "button_text": "TEXT",
+            "button_url": "https:\/\/www.google.com"
+          }
+        },
+        "button_AQEzj8": {
+          "type": "button",
+          "settings": {
+            "button_text": "TEXT",
+            "button_url": "https:\/\/www.google.com"
+          }
+        },
+        "button_TdKhyD": {
+          "type": "button",
+          "settings": {
+            "button_text": "TEXT",
+            "button_url": "https:\/\/www.google.com"
+          }
+        },
+        "button_iV7LRL": {
+          "type": "button",
+          "settings": {
+            "button_text": "TEXT",
+            "button_url": "https:\/\/www.google.com"
+          }
+        }
+      },
+      "block_order": [
+        "button_kcf6Ng",
+        "button_AQEzj8",
+        "button_TdKhyD",
+        "button_iV7LRL"
+      ],
       "settings": {
         "hero_image": "shopify:\/\/shop_images\/fakestore_hero_image.jpg",
         "subtitle": "IN STORES & ONLINE",
-        "title": "<h1>50% OFF<br\/>EVERYTHING<\/h1>",
-        "button_1_text": "WOMEN",
-        "button_1_url": "https:\/\/www.google.com",
-        "button_2_text": "MEN",
-        "button_2_url": "https:\/\/www.google.com",
-        "button_3_text": "KIDS",
-        "button_3_url": "https:\/\/www.google.com",
-        "button_4_text": "HOME",
-        "button_4_url": "https:\/\/www.google.com"
+        "title": "<h1>50% OFF<br\/>EVERYTHING<\/h1>"
       }
     },
     "fs_image_with_text_GLF3fJ": {

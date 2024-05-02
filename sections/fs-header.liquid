@@ -7,7 +7,6 @@
         <img src="{{ settings.logo | image_url }}" alt="{{ settings.logo.alt | escape }}">
       </a>
     </div>
-    
     <ul class="nav-list">
       {% for link in linklists.main-menu.links %}
         <li class="nav-item">
@@ -16,21 +15,18 @@
       {% endfor %}
     </ul>
   </div>
-
+  
   <div class="header-cart">
     <div class="search-account">
       <div class="search">
         <input type="text" class="search-input" placeholder="Search...">
       </div>
-
       <div class="account">
         <a href="">My Account</a>  
         <a href="">Sign in or Sign up</a>  
       </div>
       <div class="divider">|</div>
     </div>
-
-
       <div class="cart">
         <a href="{{ shop.url }}">
           <img src="{{ section.settings.cart_icon | image_url }}">
