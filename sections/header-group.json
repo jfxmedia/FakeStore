@@ -2,6 +2,14 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "fs_announcement_bar_pUK4CF": {
+      "type": "fs-announcement-bar",
+      "settings": {
+        "announcement_text": "FREE SHIPPING & RETURNS ON EVERY ORDER!",
+        "announcement_url": "\/",
+        "bar_color": "blue"
+      }
+    },
     "fs_header_PzqzBB": {
       "type": "fs-header",
       "settings": {
@@ -11,6 +19,7 @@
     }
   },
   "order": [
+    "fs_announcement_bar_pUK4CF",
     "fs_header_PzqzBB"
   ]
 }

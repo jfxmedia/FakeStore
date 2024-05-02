@@ -6,28 +6,28 @@
         "button_kcf6Ng": {
           "type": "button",
           "settings": {
-            "button_text": "TEXT",
+            "button_text": "WOMEN",
             "button_url": "https:\/\/www.google.com"
           }
         },
         "button_AQEzj8": {
           "type": "button",
           "settings": {
-            "button_text": "TEXT",
+            "button_text": "MEN",
             "button_url": "https:\/\/www.google.com"
           }
         },
         "button_TdKhyD": {
           "type": "button",
           "settings": {
-            "button_text": "TEXT",
+            "button_text": "KIDS",
             "button_url": "https:\/\/www.google.com"
           }
         },
         "button_iV7LRL": {
           "type": "button",
           "settings": {
-            "button_text": "TEXT",
+            "button_text": "HOME",
             "button_url": "https:\/\/www.google.com"
           }
         }
@@ -60,35 +60,35 @@
         "buttons_1_akkx7j": {
           "type": "buttons_1",
           "settings": {
-            "button_1_text": "TEXT",
+            "button_1_text": "WOMEN",
             "button_1_url": "https:\/\/www.google.com"
           }
         },
         "buttons_1_EeaLAm": {
           "type": "buttons_1",
           "settings": {
-            "button_1_text": "TEXT",
+            "button_1_text": "MEN",
             "button_1_url": "https:\/\/www.google.com"
           }
         },
         "buttons_1_j8gJeA": {
           "type": "buttons_1",
           "settings": {
-            "button_1_text": "TEXT",
+            "button_1_text": "KIDS",
             "button_1_url": "https:\/\/www.google.com"
           }
         },
         "buttons_1_E9N3ti": {
           "type": "buttons_1",
           "settings": {
-            "button_1_text": "TEXT",
+            "button_1_text": "HOME",
             "button_1_url": "https:\/\/www.google.com"
           }
         },
         "buttons_2_GKBz8f": {
           "type": "buttons_2",
           "settings": {
-            "button_2_text": "TEXT",
+            "button_2_text": "SHOP DORM DECOR",
             "button_2_url": "https:\/\/www.google.com"
           }
         }
@@ -106,7 +106,9 @@
         "subtitle_1": "Our latest Summer styles. Fresh. Fun. Fabulous.",
         "image_2": "shopify:\/\/shop_images\/college_dorm_room.jpg",
         "title_2": "COLLEGE BOUND",
-        "subtitle_2": "New places and new faces. Same great style."
+        "subtitle_2": "New places and new faces. Same great style.",
+        "button_style": "secondary-button",
+        "button_style_2": "secondary-button"
       }
     },
     "fs_perks_j4Rf3x": {

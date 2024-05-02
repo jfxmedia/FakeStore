@@ -36,7 +36,7 @@ time, mark, audio, video {
 
 .primary-button {
   display: inline-block;
-  padding: 15px 50px;
+  padding: 10px 30px;
   background-color: var(--color-dark);
   color: var(--color-white);
   text-decoration: none;
@@ -47,32 +47,34 @@ time, mark, audio, video {
 .secondary-button {
   display: inline-block;
   margin: 10px;
-  padding: 15px 50px;
-  color: #141414;
+  padding: 10px 30px;
+  color: var(--color-dark);
   text-decoration: underline;
   text-align: center;
 }
 
+
+
 /* Announcement Bar Styles */
 .announcement-container {
-  position: fixed;
-  z-index: 999;
   width: 100%;
-  top: 0;
-  height: auto;
+  z-index: 999;
 }
 
-.announcement-container .text-content {
+.announcement-container .text-content a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-weight: bold;
-  font-size: 2.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--color-white);
+  padding: 5px;
 }
 
 /* Header Styles */
 .header {
-  position: sticky;
   background-color: var(--color-white);
-  top: 0;
   z-index: 999;
   width: 100%;
   display: flex;
@@ -347,6 +349,10 @@ time, mark, audio, video {
 .collection-content-container .content p {
   margin: 0;
   padding: 10px 0;
+}
+
+.collection-content-container .buttons > * {
+  margin: 10px;
 }
 
 

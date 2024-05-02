@@ -10,7 +10,7 @@
 
 <div class="announcement-container {% if section.settings.bar_color == 'blue' %}blue {% else %}white{% endif %}">
   <div class="text-content">
-    {{ section.settings.announcement_text }}
+    <a href="">{{ section.settings.announcement_text }}</a>
   </div>
 </div>
 
@@ -20,10 +20,16 @@
   "name": "FS Announcement Bar",
   "settings": [
     {
-      "type": "richtext",
+      "type": "text",
       "id": "announcement_text",
       "label": "Announcement Text",
-      "default": "<p>FREE SHIPPING & RETURNS ON EVERY ORDER!</p>"
+      "default": "FREE SHIPPING & RETURNS ON EVERY ORDER!"
+    },
+    {
+      "type": "text",
+      "id": "announcement_url",
+      "label": "Announcement Url",
+      "default": "/"
     },
     {
       "type": "radio",
