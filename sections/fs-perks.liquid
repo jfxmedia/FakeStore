@@ -1,43 +1,3 @@
-{%- style -%}
-  .perks-container {
-    display: flex;
-    background-color: #F7F8F8;
-    align-items: center;
-    flex-direction: column;
-    margin: 22px 0;
-    padding: 30px 0;
-    height: auto;
-  }
-
-  .perks {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex: 1;
-  }
-
-  .perk {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .perk-icon {
-    width: 100px;
-    height: 100px;
-    padding: 15px;
-    margin-bottom: 10px;
-  }
-
-  .perk p {
-    max-width: 80%;
-    text-align: center;
-    margin: auto;
-  }
-
-{%- endstyle -%}
-
-
 <div class="perks-container">
     {% if section.settings.title != blank %}
         <div class="title">{{ section.settings.title }}</div>        
@@ -67,6 +27,7 @@
     {
         "type": "perk",
         "name": "Perk",
+        "limit": 3,
         "settings": [
         {
             "type": "image_picker",
