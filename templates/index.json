@@ -85,7 +85,57 @@
     },
     "fs_collections_txXx7h": {
       "type": "fs-collections",
+      "blocks": {
+        "buttons_1_akkx7j": {
+          "type": "buttons_1",
+          "settings": {
+            "button_1_text": "TEXT",
+            "button_1_url": "https:\/\/www.google.com"
+          }
+        },
+        "buttons_1_EeaLAm": {
+          "type": "buttons_1",
+          "settings": {
+            "button_1_text": "TEXT",
+            "button_1_url": "https:\/\/www.google.com"
+          }
+        },
+        "buttons_1_j8gJeA": {
+          "type": "buttons_1",
+          "settings": {
+            "button_1_text": "TEXT",
+            "button_1_url": "https:\/\/www.google.com"
+          }
+        },
+        "buttons_1_E9N3ti": {
+          "type": "buttons_1",
+          "settings": {
+            "button_1_text": "TEXT",
+            "button_1_url": "https:\/\/www.google.com"
+          }
+        },
+        "buttons_2_GKBz8f": {
+          "type": "buttons_2",
+          "settings": {
+            "button_2_text": "TEXT",
+            "button_2_url": "https:\/\/www.google.com"
+          }
+        }
+      },
+      "block_order": [
+        "buttons_1_akkx7j",
+        "buttons_1_EeaLAm",
+        "buttons_1_j8gJeA",
+        "buttons_1_E9N3ti",
+        "buttons_2_GKBz8f"
+      ],
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/college_bound_kids.jpg",
+        "title_1": "NEW ARRIVALS",
+        "subtitle_1": "Our latest Summer styles. Fresh. Fun. Fabulous.",
+        "image_2": "shopify:\/\/shop_images\/college_dorm_room.jpg",
+        "title_2": "COLLEGE BOUND",
+        "subtitle_2": "New places and new faces. Same great style."
       }
     },
     "fs_perks_j4Rf3x": {
