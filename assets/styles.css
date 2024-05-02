@@ -46,7 +46,7 @@ time, mark, audio, video {
 
 .header-logo img {
   display: flex;
-  margin: 20px;
+  padding: 20px;
   max-width: 100%;
 }
 
@@ -74,7 +74,8 @@ time, mark, audio, video {
 }
 
 .nav-item {
-  margin-right: 20px;
+  padding: 20px;
+  flex-grow: 1;
 }
 
 .nav-item:last-child {
@@ -126,7 +127,7 @@ time, mark, audio, video {
   display: none;
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 1023px) {
   .hamburger-menu {
     display: block;
     font-size: 26px;
@@ -196,7 +197,7 @@ time, mark, audio, video {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 1023px) {
   .hero-section-content {
     position: absolute;
     left: 50%;
@@ -253,7 +254,7 @@ time, mark, audio, video {
   font-weight: bold;
   font-size: 4.2rem;
 }
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 1023px) {
   .image-with-text-container {
     position: relative;
   }
@@ -363,7 +364,7 @@ time, mark, audio, video {
   text-align: center;
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 1023px) {
   .perks {
     display: flex;
     justify-content: space-evenly;
