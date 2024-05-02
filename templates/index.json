@@ -83,33 +83,6 @@
         "button_text": "SHOP SUMMER ESSENTIALS"
       }
     },
-    "fs_collections_txXx7h": {
-      "type": "fs-collections",
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/college_bound_kids.jpg",
-        "title_1": "NEW ARRIVALS",
-        "subtitle_1": "Our latest Summer styles. Fresh. Fun. Fabulous.",
-        "button_1_text_1": "WOMEN",
-        "button_1_url_1": "shopify:\/\/collections",
-        "button_1_text_2": "MEN",
-        "button_1_url_2": "shopify:\/\/collections",
-        "button_1_text_3": "KIDS",
-        "button_1_url_3": "shopify:\/\/collections",
-        "button_1_text_4": "HOME",
-        "button_1_url_4": "shopify:\/\/collections",
-        "image_2": "shopify:\/\/shop_images\/college_dorm_room.jpg",
-        "title_2": "COLLEGE BOUND",
-        "subtitle_2": "New places and new faces. Same great style.",
-        "button_2_text_1": "SHOP DORM DECOR",
-        "button_2_url_1": "shopify:\/\/collections",
-        "button_2_text_2": "",
-        "button_2_url_2": "",
-        "button_2_text_3": "",
-        "button_2_url_3": "",
-        "button_2_text_4": "",
-        "button_2_url_4": ""
-      }
-    },
     "fs_perks_j4Rf3x": {
       "type": "fs-perks",
       "blocks": {
@@ -149,7 +122,6 @@
     "featured_collection",
     "fs_hero_NUdmhe",
     "fs_image_with_text_GLF3fJ",
-    "fs_collections_txXx7h",
     "fs_perks_j4Rf3x"
   ]
 }
