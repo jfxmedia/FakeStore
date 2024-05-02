@@ -83,6 +83,11 @@
         "button_text": "SHOP SUMMER ESSENTIALS"
       }
     },
+    "fs_collections_txXx7h": {
+      "type": "fs-collections",
+      "settings": {
+      }
+    },
     "fs_perks_j4Rf3x": {
       "type": "fs-perks",
       "blocks": {
@@ -122,6 +127,7 @@
     "featured_collection",
     "fs_hero_NUdmhe",
     "fs_image_with_text_GLF3fJ",
+    "fs_collections_txXx7h",
     "fs_perks_j4Rf3x"
   ]
 }
