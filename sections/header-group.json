@@ -49,6 +49,7 @@
     "fs_header_PzqzBB": {
       "type": "fs-header",
       "settings": {
+        "cart_icon": "shopify:\/\/shop_images\/cart_icon_3.svg",
         "header_link_color": "#333333"
       }
     }
