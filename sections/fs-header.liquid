@@ -6,8 +6,8 @@
   {% comment %} Desktop Menu {% endcomment %}
   <div class="header-logo-links">
     <div class="header-logo">
-      <a href="{{ shop.url }}">
-        <img src="{{ settings.logo | image_url }}" alt="{{ settings.logo.alt | escape }}">
+      <a href="/">
+        <img src="{{ settings.logo | image_url }}" alt="{{ settings.logo.alt | escape }}" width="250" height="auto">
       </a>
     </div>
     <ul class="nav-list">
@@ -23,16 +23,19 @@
     <div class="search-account">
       <div class="search">
         <input type="text" class="search-input" placeholder="Search...">
+        <a href="/">
+          <img src="{{ 'search-icon.svg' | file_url }}" alt="{{ 'search-icon.svg' | escape }}" class="search-icon" width="20" height="auto">
+        </a>
       </div>
       <div class="account">
-        <a href="">My Account</a>  
-        <a href="">Sign in or Sign up</a>  
+        <a href="/">My Account</a>  
+        <a href="/">Sign in or Sign up</a>  
       </div>
       <div class="divider">|</div>
     </div>
       <div class="cart">
-        <a href="{{ shop.url }}">
-          <img src="{{ section.settings.cart_icon | image_url }}">
+        <a href="/">
+          <img src="{{ section.settings.cart_icon | image_url }}" width="40" height="auto">
         </a>
       </div>
   </div>

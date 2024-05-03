@@ -1,11 +1,14 @@
 <section class="hero-container">
   <div class="hero-section-image">
-    <img src="{{ section.settings.hero_image | img_url: 'master' }}" alt="{{ section.settings.hero_image.alt | escape }}">
+    <img
+      src="{{ section.settings.hero_image | img_url: 'master' }}"
+      alt="{{ section.settings.hero_image.alt | escape }}"
+    >
   </div>
   <div class="hero-section-content">
     <div class="hero-section-text">
       {% if section.settings.subtitle != blank %}
-        <div class="hero-section-subtitle">{{ section.settings.subtitle | raw }}</div>
+        <div class="hero-section-subtitle">{{ section.settings.subtitle }}</div>
       {% endif %}
       {% if section.settings.title != blank %}
         <h1>{{ section.settings.title }}</h1>
@@ -20,7 +23,6 @@
     </div>
   </div>
 </section>
-
 
 {% schema %}
 {
@@ -50,11 +52,11 @@
     }
   ],
   "blocks": [
-     {
-       "name": "Buttons",
-       "type": "button",
-       "limit": 4,
-       "settings": [
+    {
+      "name": "Buttons",
+      "type": "button",
+      "limit": 4,
+      "settings": [
         {
           "type": "text",
           "id": "button_text",
@@ -67,9 +69,9 @@
           "label": "Button URL",
           "default": "https://www.google.com"
         }
-       ]
-     }
-   ],
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "FS Hero",

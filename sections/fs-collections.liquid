@@ -2,7 +2,7 @@
   <div class="collection-container">
     <div class="collection-content-container">
       <div class="background-image">
-        <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="{{ section.settings.image_1.alt | escape }}">
+        <img src="{{ section.settings.image_1 | image_url: master }}" alt="{{ section.settings.image_1.alt | escape }}">
       </div>
       <div class="content">
         <h2>{{ section.settings.title_1 }}</h2>
@@ -10,7 +10,9 @@
         <div class="buttons">
           {% for block in section.blocks %}
             {% if block.settings.button_1_text != blank and block.settings.button_1_url != blank %}
-              <a href="{{ block.settings.button_1_url }}" class="{{ section.settings.button_style }}">{{ block.settings.button_1_text }}</a>
+              <a href="{{ block.settings.button_1_url }}" class="{{ section.settings.button_style }}">
+                {{- block.settings.button_1_text -}}
+              </a>
             {% endif %}
           {% endfor %}
         </div>
@@ -18,7 +20,7 @@
     </div>
     <div class="collection-content-container">
       <div class="background-image">
-        <img src="{{ section.settings.image_2 | img_url: 'master' }}" alt="{{ section.settings.image_2.alt | escape }}">
+        <img src="{{ section.settings.image_2 | image_url: master }}" alt="{{ section.settings.image_2.alt | escape }}">
       </div>
       <div class="content">
         <h2>{{ section.settings.title_2 }}</h2>
@@ -26,7 +28,9 @@
         <div class="buttons">
           {% for block in section.blocks %}
             {% if block.settings.button_2_text != blank and block.settings.button_2_url != blank %}
-              <a href="{{ block.settings.button_2_url }}" class="{{ section.settings.button_style_2 }}">{{ block.settings.button_2_text }}</a>
+              <a href="{{ block.settings.button_2_url }}" class="{{ section.settings.button_style_2 }}">
+                {{- block.settings.button_2_text -}}
+              </a>
             {% endif %}
           {% endfor %}
         </div>
@@ -34,8 +38,6 @@
     </div>
   </div>
 </div>
-
-
 
 {% schema %}
 {
@@ -106,46 +108,46 @@
       "default": "primary-button"
     }
   ],
-    "blocks": [
-      {
-        "name": "Button Left",
-        "type": "buttons_1",
-        "limit": 4,
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_1_text",
-            "label": "Button 1 Text",
-            "default": "TEXT"
-          },
-          {
-            "type": "text",
-            "id": "button_1_url",
-            "label": "Button 1 URL",
-            "default": "https://www.google.com"
-          }
-        ]
-      },
-      {
-        "name": "Button Right",
-        "type": "buttons_2",
-        "limit": 4,
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_2_text",
-            "label": "Button 2 Text",
-            "default": "TEXT"
-          },
-          {
-            "type": "text",
-            "id": "button_2_url",
-            "label": "Button 2 URL",
-            "default": "https://www.google.com"
-          }
-        ]
-      }
-    ],
+  "blocks": [
+    {
+      "name": "Button Left",
+      "type": "buttons_1",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_1_text",
+          "label": "Button 1 Text",
+          "default": "TEXT"
+        },
+        {
+          "type": "text",
+          "id": "button_1_url",
+          "label": "Button 1 URL",
+          "default": "https://www.google.com"
+        }
+      ]
+    },
+    {
+      "name": "Button Right",
+      "type": "buttons_2",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_2_text",
+          "label": "Button 2 Text",
+          "default": "TEXT"
+        },
+        {
+          "type": "text",
+          "id": "button_2_url",
+          "label": "Button 2 URL",
+          "default": "https://www.google.com"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "FS Collections",

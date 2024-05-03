@@ -8,48 +8,50 @@
       </div>
     </div>
     <div class="background-image">
-      <img src="{{ section.settings.featured_image | img_url: 'master' }}" alt="{{ section.settings.featured_image.alt | escape }}">
+      <img
+        src="{{ section.settings.featured_image | img_url: 'master' }}"
+        alt="{{ section.settings.featured_image.alt | escape }}"
+      >
     </div>
   </div>
 </div>
-  
-  {% schema %}
-  {
-    "name": "FS Image with Text",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "featured_image",
-        "label": "Featured Image",
-        "info": "Upload the main image for the hero section."
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title"
-      },
-      {
-        "type": "text",
-        "id": "subtitle",
-        "label": "Subtitle"
-      },
-      {
-        "type": "url",
-        "id": "button_url",
-        "label": "Button URL"
-      },
-      {
-        "type": "text",
-        "id": "button_text",
-        "label": "Button Text"
-      }
-    ],
-    "presets": [
-      {
-        "name": "FS Image with Text",
-        "category": "Fakestore"
-      }
-    ]
-  }
-  {% endschema %}
-  
+
+{% schema %}
+{
+  "name": "FS Image with Text",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "featured_image",
+      "label": "Featured Image",
+      "info": "Upload the main image for the hero section."
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FS Image with Text",
+      "category": "Fakestore"
+    }
+  ]
+}
+{% endschema %}
